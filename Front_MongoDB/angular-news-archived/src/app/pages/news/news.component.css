@@ -1,0 +1,55 @@
+.padre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.card__padre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.card{
+    height: 75%;
+    width: 100%;
+    margin:0.5%;
+    /* background-color: rgb(128, 128, 128, 0.20); */
+    background-image: url("https://images.ecestaticos.com/lsVGOWSA2OTszp2xSHxVuhs561A=/0x0:1000x750/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fb98%2Fd4f%2F0e9%2Fb98d4f0e9d956122ec9e8c2b1b1c350f.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    position: relative;
+}
+.list-group-item{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.card-title{
+    font-weight: bold;
+}
+.card__body--boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    color: blanchedalmond;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: black; 
+    border-radius: 10px;  
+    width: 305px;   
+    cursor: pointer;
+}
+button:hover{
+    background-color: black;
+    border-color: antiquewhite;
+    color: aliceblue;
+}

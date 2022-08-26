@@ -1,0 +1,22 @@
+<div class="container padre">
+    <h1>Archived</h1>
+    <div class="card__padre" *ngFor="let archived of archiveds">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{archived.title}}</h5>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Author: {{archived.author}} | {{archived.description}}</li>
+                        <li class="list-group-item">Content: {{archived.content}}</li>
+                        <li class="list-group-item">Archived Date: {{archived.archiveDate | date}}</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="card__body--boton">
+                        <button type="button" class="formula" on-click="deleteArchived(archived)">Delete</button>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    

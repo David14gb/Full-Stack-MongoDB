@@ -1,0 +1,22 @@
+<div class="container padre">
+    <h1>News</h1>
+    <div class="card__padre" *ngFor="let new of newsDoc">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">{{new.title}}</h4>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Date: {{new.date | date}} | {{new.description}}</li>
+                        <li class="list-group-item">Author: {{new.author}}</li>
+                        <li class="list-group-item">News Content: {{new.content}}</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="card__body--boton">
+                        <button type="button" class="formula" on-click="archivedNews(new)">Archived</button>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
